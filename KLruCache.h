@@ -131,7 +131,6 @@ private:
        {
            evictLeastRecent();
        }
-
        NodePtr newNode = std::make_shared<LruNodeType>(key, value);
        insertNode(newNode);
        nodeMap_[key] = newNode;
